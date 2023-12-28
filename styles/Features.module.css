@@ -1,0 +1,61 @@
+/* styles/features.module.css */
+
+.featuresContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(32, 15, 0);
+    padding: 20px;
+}
+
+.feature {
+    width: 30%;
+    /* Adjust the width for wide screens */
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgb(59, 28, 2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.featureIcon {
+    font-size: 3rem;
+    /* Reduce icon size */
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.featureTitle {
+    font-size: medium;
+    /* Adjust title font size */
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.featureDescription {
+    color: #faf8f8;
+    font-size: small;
+}
+
+
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+    .featuresContainer {
+        justify-content: space-around;
+    }
+    .feature {
+        width: 48%;
+        /* Two cards per row on smaller screens */
+    }
+}
+
+
+/* Media query for mobile screens */
+
+@media (max-width: 480px) {
+    .feature {
+        width: 80%;
+        /* Full width on mobile screens */
+    }
+}

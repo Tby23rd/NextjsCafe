@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+body {
+    color: white;
+    background: rgb(32, 15, 0);
+}
+
+
+/* styles/styles.css */
+
+h1 {
+    font-family: 'Merienda', cursive;
+    /* Replace 'Your Cute Font' with the actual cute font you want to use */
+    background: none;
+    text-decoration: none;
+    /* Add other styling properties as needed */
+}

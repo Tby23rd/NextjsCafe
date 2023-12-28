@@ -1,0 +1,101 @@
+/* order.module.css */
+
+.orderContainer {
+    max-width: 100%;
+    margin: 0 auto;
+    color: white;
+    padding: 40px 20px;
+    background-color: rgb(32, 15, 0);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.orderHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.orderMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menuItem {
+    flex: 0 0 calc(25% - 20px);
+    /* Show 4 columns on large screens */
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgb(59, 28, 2);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    /* Add box-sizing to include padding in width calculation */
+}
+
+.menuItem h2 {
+    margin-bottom: 10px;
+}
+
+.menuItem p {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.menuItem ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuItem li {
+    margin-bottom: 5px;
+}
+
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 1200px) {
+    .menuItem {
+        flex-basis: calc(33.333% - 20px);
+        /* Show 3 columns on medium screens */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menuItem {
+        flex-basis: calc(50% - 20px);
+        /* Show 2 columns on small screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menuItem {
+        flex-basis: calc(100% - 20px);
+        /* Show 1 column on extra small screens */
+    }
+}
+
+.selectedItems {
+    margin-top: 40px;
+}
+
+.orderButton {
+    margin-top: 20px;
+}
+
+.orderButton button {
+    border-radius: 20px;
+    /* Adjust the border-radius as needed */
+    margin-right: 10px;
+    /* Add some space between buttons */
+    padding: 10px 20px;
+    /* Add padding to the buttons for a larger clickable area */
+    background-color: rgb(32, 15, 0);
+    color: #fff;
+    border-width: 5px;
+    border-color: #fff;
+}

@@ -1,0 +1,54 @@
+/* styles/features.module.css */
+
+.featuresContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(32, 15, 0);
+    padding: 20px;
+}
+
+.feature {
+    width: 15%;
+    /* Adjust the width for wide screens */
+    margin-bottom: 20px;
+    padding: 10px;
+    /* Smaller padding */
+    background-color: rgb(59, 28, 2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.featureIcon {
+    font-size: 2rem;
+    /* Smaller icon size */
+    margin-bottom: 5px;
+    /* Smaller margin */
+    color: rgb(255, 255, 255);
+}
+
+.featureTitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    /* Smaller title font size */
+    margin-bottom: 5px;
+    /* Smaller margin */
+    color: rgb(255, 255, 255);
+}
+
+
+/* Media query for screens up to 768px */
+
+@media (max-width: 768px) {
+    .featuresContainer {
+        justify-content: space-around;
+    }
+    .feature {
+        width: 30%;
+        /* Two cards per row on screens up to 768px */
+    }
+}
+
+.featuresHeader {
+    text-align: center;
+}
