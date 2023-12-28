@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
  
   const handleShopNow = () => {
     // Programmatic navigation
-    window.location.href = '/Shop';
+    window.location.href = '/OrderPage';
   };
 
   const handleCatalog = () => {
