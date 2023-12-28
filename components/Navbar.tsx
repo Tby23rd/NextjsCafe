@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href={`/Shop`}>
+            <Link href={`/OrderPage`}>
               <p>Shop</p>
             </Link>
           </li>

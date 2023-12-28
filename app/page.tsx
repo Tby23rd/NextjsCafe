@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import BookRes from '../components/BookRes';
 import Contact from '../components/Contact';
-import Shop from '../pages/Shop';
+import OrderPage from '../pages/OrderPage';
 import FeaturesS from '../components/FeaturesS';
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer'; // Import the Footer component
@@ -15,7 +15,7 @@ const Page: React.FC = () => {
       <Navbar />
       <Hero />
       <FeaturesS />
-      <Shop/>
+      <OrderPage/>
       <BookRes/>
       <Testimonials />  
       <Contact/>
